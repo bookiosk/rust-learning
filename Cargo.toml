@@ -5,4 +5,5 @@ members = [
     "crates/cli_tool",
     "crates/http_server",
     "crates/math_examples",
+    "crates/bin_examples",
 ]
