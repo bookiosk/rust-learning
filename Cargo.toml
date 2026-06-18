@@ -1,0 +1,8 @@
+[workspace]
+members = [
+    "crates/common",
+    "crates/hello_world",
+    "crates/cli_tool",
+    "crates/http_server",
+    "crates/math_examples",
+]
