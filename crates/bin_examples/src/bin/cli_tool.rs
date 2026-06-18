@@ -1,5 +1,8 @@
 use std::env;
-use rt_common::greet;
+
+fn greet(name: &str) -> String {
+    format!("Hello, {}!", name)
+}
 
 fn main() {
     let mut args = env::args().skip(1);

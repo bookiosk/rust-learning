@@ -1,25 +1,24 @@
 # Rust Learning Workspace
 
-This repository is a multi-crate Rust workspace with several small example crates for learning.
+This repository is a focused Rust workspace containing a single crate with multiple example binaries.
 
-Run individual crates with `cargo run -p <package>` (examples below).
+Run the binaries in `crates/bin_examples/src/bin/` using `cargo run -p bin_examples --bin <name>`.
 
-Available crates:
-- rt_common: shared library with small helper functions
-- hello_world: simple executable that prints a greeting
-- cli_tool: small CLI that greets a named user
-- http_server: minimal synchronous HTTP responder (for learning purposes)
-- math_examples: small algorithms (Fibonacci)
+Available binaries (in crates/bin_examples/src/bin):
+- hello_world
+- cli_tool
+- http_server
+- math_examples
 
 Examples
 
-- Build the whole workspace:
+- Build the workspace:
 
   cargo build
 
-- Run a specific crate:
+- Run a specific binary:
 
-  cargo run -p hello_world
-  cargo run -p cli_tool -- Alice
-  cargo run -p http_server
-  cargo run -p math_examples
+  cargo run -p bin_examples --bin hello_world
+  cargo run -p bin_examples --bin cli_tool -- Alice
+  cargo run -p bin_examples --bin http_server
+  cargo run -p bin_examples --bin math_examples
